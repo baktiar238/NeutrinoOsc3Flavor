@@ -87,7 +87,7 @@ for CP in CP_phases:  # start index at 1
     
     plt.ylim(0,1)
     plt.xscale('log')
-    plt.xlabel("E (GeV)")
+    plt.xlabel("E (MeV)")
     plt.plot(E, Osc_Probability_mu, label="$\\nu_{e} \\rightarrow \\nu_{\\mu}$")
     plt.plot(E, Sur_Probability,label="$\\nu_{e} \\rightarrow \\nu_{e}$")
     plt.plot(E, Osc_Probability_tau,label="$\\nu_{e} \\rightarrow \\nu_{\\tau}$")
@@ -97,3 +97,4 @@ for CP in CP_phases:  # start index at 1
     plt.show()
 
             
+
