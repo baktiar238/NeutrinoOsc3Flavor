@@ -31,8 +31,14 @@ def U_pmns(t12, t13, t23, CP):
         [ s12*s23 - c12*c23*s13*e_CP, -c12*s23 - s12*c23*s13*e_CP,  c23*c13]
     ], dtype=complex)
 
-#Matter potential 
-rho = 2.7  # g/cm^3
+for l in range (0,L):
+    def fn_rho(l):
+        if l < 200:
+            return 2.7
+        else:
+            return 2.9
+
+rho = fn_rho(L)
 Ye = 0.5
 V = 7.56e-14 * rho * Ye
 
@@ -109,3 +115,4 @@ for CP in deltaCP_list:
     plt.legend()
     plt.grid(True)
     plt.show()
+
