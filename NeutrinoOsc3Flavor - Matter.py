@@ -33,10 +33,16 @@ def U_pmns(t12, t13, t23, CP):
 
 for l in range (0,L):
     def fn_rho(l):
-        if l < 200:
+        if l < 260:
             return 2.7
+        if 260 < l < 520:
+            return 2.75
+        if 520 < l < 780:
+            return 2.85
+        if 780 < l < 1040:
+            return 2.90
         else:
-            return 2.9
+            return 2.95
 
 rho = fn_rho(L)
 Ye = 0.5
@@ -115,4 +121,5 @@ for CP in deltaCP_list:
     plt.legend()
     plt.grid(True)
     plt.show()
+
 
