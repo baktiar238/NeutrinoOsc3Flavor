@@ -40,9 +40,9 @@ for l in range (0,L):
         if 520 < l < 780:
             return 2.85
         if 780 < l < 1040:
-            return 2.7
+            return 2.9
         else:
-            return 2.95
+            return 2.7
 
 rho = fn_rho(L)
 Ye = 0.5
@@ -121,6 +121,7 @@ for CP in deltaCP_list:
     plt.legend()
     plt.grid(True)
     plt.show()
+
 
 
 
