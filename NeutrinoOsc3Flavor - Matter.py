@@ -33,16 +33,16 @@ def U_pmns(t12, t13, t23, CP):
 
 for l in range (0,L):
     def fn_rho(l):
-        if l < 260:
-            return 2.7
-        if 260 < l < 520:
-            return 2.75
-        if 520 < l < 780:
-            return 2.85
-        if 780 < l < 1040:
+        if l < 226:
+            return 2.6
+        if 226 < l < 315:
+            return 2.9
+        if 315 < l < 985:
+            return 3.38
+        if 985 < l < 1074:
             return 2.9
         else:
-            return 2.7
+            return 2.6
 
 rho = fn_rho(L)
 Ye = 0.5
