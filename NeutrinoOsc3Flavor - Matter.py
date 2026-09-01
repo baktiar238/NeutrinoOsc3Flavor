@@ -31,20 +31,7 @@ def U_pmns(t12, t13, t23, CP):
         [ s12*s23 - c12*c23*s13*e_CP, -c12*s23 - s12*c23*s13*e_CP,  c23*c13]
     ], dtype=complex)
 
-for l in range (0,L):
-    def fn_rho(l):
-        if l < 226:
-            return 2.6
-        if 226 < l < 315:
-            return 2.9
-        if 315 < l < 985:
-            return 3.38
-        if 985 < l < 1074:
-            return 2.9
-        else:
-            return 2.6
-
-rho = fn_rho(L)
+rho = 2.8
 Ye = 0.5
 V = 7.56e-14 * rho * Ye
 
